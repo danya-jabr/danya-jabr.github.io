@@ -1,171 +1,387 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/mine.css">
-    <link rel="stylesheet" href="css/">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <script src="js/bootstrap.min.js"></script>
-    <style>
-    .navbar{
-     margin-bottom: 0px;
+    <link href="css/css.css" rel="stylesheet">
 
-    }
-    .panel{
-     margin-top: 20px;
-
-    }
-
-
-    </style>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
 </head>
+
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <nav class="navbar navbar-inverse">
-                <div class="navbar navbar-header">
-                    <a class="navbar-brand" href="#">Webpage</a>
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-12">
+                <section>
+
+
+                    <nav class="navbar navbar-fixed-top list col-md-12 nav-fill">
+                        <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#collapse_target">
+                            &#9776;
+                        </button> -->
+                        <div class="navbar-header ">
+                            <button id="icon" type="button" class="navbar-toggle collapsed " data-toggle="collapse"
+                                data-target="#collapse_target" aria-expanded="false" aria-controls="navbar">
+                                &#9776;
+                            </button>
+
+                            <div class="logo">
+                                <a class="navbar-brand" href="#"><img src="img/SaveX_Logo.png"></a>
+                            </div>
+                        </div>
+                        <div class="navbar-collapse collapse" id="collapse_target">
+                            <ul class="nav navbar-nav navbar-right ">
+
+                                <li class="nav-item"> <a class="nav-link" href="#">About Us</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">What We DO</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Mission Statement</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Vision Statement</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Quality Statement</a></li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </section>
+                <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+
+                    <!-- indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+
+                    </ol>
+
+                    <!-- wrapper -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="overlay"></div>
+                            <img src="img/1.png" alt="about">
+                            <div class="txt">
+
+                                Enriching Lives with
+                                State-of-the-art Technologies
+
+                                <p>Hanwha is committed to providing a complete,
+                                    balanced financial solution and building sound financial security to enable
+                                    our customers to live and share their dreams with the next generation.</p>
+                            </div>
+
+
+                        </div>
+                        <div class="item ">
+                            <div class="overlay"></div>
+                            <img src="img/2.png" class="img" alt="what_we_do">
+                            <div class="txt">
+                                Designing
+                                a More Valuable World
+                                <p>Hanwha is committed to providing a complete,
+                                    balanced financial solution and building sound financial security to enable
+                                    our customers to live and share their dreams with the next generation.</p>
+                            </div>
+
+                        </div>
+                        <div class="item ">
+                            <div class="overlay"></div>
+                            <img src="img/3.png" class="img" alt="">
+                        </div>
+
+
+                    </div>
+
+                    <!-- left and right controls -->
+                    <!-- <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a href="#myCarousel" class="right carousel-control" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a> -->
+
+                    <div class="carousel-item">
+                        <div class="carousel-caption">
+                            <!-- <h1>Hi There</h1>
+                            <p>danya</p> -->
+                        </div>
+                    </div>
+
                 </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="home.html">home</a></li>
-                    <li><a href="courses.html">courses</a></li>
-                    <li><a href="about.html">about us</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="conect.html">conect us<span
-                            class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">fasebook</a></li>
-                            <li><a href="#">gmail</a></li>
-                            <li><a href="#">linked in</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn-group btn-group-justified">
+                    <a href="#about" class="btn  btn-block btn_style" type="button">About Us
+                        <!-- <span class="line-1 "></span>
+                        <span class="line-2 "></span>
+                        <span class="line-3 "></span>
+                        <span class="line-4 "></span> -->
+
+                    </a>
+
+
+                    <a href="#what_we_do" class="btn  btn-block btn_style" type="button">What We DO</a>
+
+
+                    <a href="#mission_statment" class="btn  btn-block btn_style" type="button">Mission Statement</a>
+
+
+                    <a href="#vision_statment" class="btn  btn-block btn_style" type="button">Vision Statement</a>
+
+
+                    <a href="#quality_statment" class="btn  btn-block btn_style" type="button">Quality Statement</a>
+
+
+                    <a href="#our_products" class="btn  btn-block btn_style" type="button">Our Products</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="about col-md-12 " id="about">
+                <div class="about_div">
+                    <div class="content ">
+                        <h1>Our Company</h1>
+                        <p>
+                            Save-X Energy is Turkish based Company with offices in Istanbul, and is mainly focused in
+                            the
+                            developing countries of the Middle East, Africa, Asia, Central and South America where the
+                            electricity networks are inadequate.
+                            <br>
+                            <br>
+                            Save-X Energy Engineering Limited was founded to exploit the need for clean and green
+                            energy
+                            solutions to the growing need for provision of green off-grid power.
+                            Save-X Energy is an environmental friendly energy producer. What makes us so inventive is
+                            how
+                            we look and understand Nature and it's energy.
+                            <br>
+                            <br>
+                            The sun was here from the start, it'll be there to the end, the sun powers everything that
+                            grows on earth, it’s a source of energy we can trust to pwer our world today, tomorrow and
+                            for
+                            generations to come with no harm to our planet, it's clean, safe, and infinite.
+                            It’s all about the micro inverters. Solar panels generate DC electricity and inverters turn
+                            that into AC electricity, the kind of electricity your house uses. Inverters have been
+                            large
+                            and expensive. So there was only one per home (or business). Save-X makes a micro inverter
+                            which allows the home owner (or business owner) to put an inverter on each panel. The
+                            proliferation of inverters makes solar energy far more efficient and available for every
+                            homeowner and business.
+                            <br>
+                            <br>
+                            With that as our guide, we have steadily grown in the energy sector and diversified our
+                            productions profile to cover generating electricity from several sources and also save in
+                            fuel
+                            consumptions. With this in mind, Save-X Energy has developed a unique and innovative
+                            solution
+                            to the ongoing problem of securing easy access to cost-effective, clean sources of power.
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="what_we_do col-md-12" id="what_we_do">
+                <div class="what_we_do_div">
+                    <div class="content ">
+                        <h1>What We Do</h1>
+                        <p>
+                            Save-X Energy's products range from our Hybrid generator to our saveX innovation to the
+                            Diesel
+                            running generators which is patent in Germany and reduces fuel consumption by 25% to 40%
+                            for a
+                            standard big generator.
+                            <br>
+                            <br>
+                            As consumers look for energy-saving products to help the environment and save money,
+                            manufacturers are offering more energy saving devices than ever before. But not all are
+                            worth
+                            the money, and some are an outright waste. Save-X Electricity saving devices use a state of
+                            the
+                            art technology to actively monitor and improve the power factor of your business and
+                            household,
+                            Save-X products are among the top products available that are actually worth the price to
+                            help
+                            you live green and save money while you're at it! We guarantee minimum 25% average saving
+                            on
+                            your monthly usage.
+                            <br>
+                            <br>
+                            Multi-source grid interface system. The Save-X Hybrid generator is designed to enable a
+                            base
+                            station to be powered entirely by renewable power whilst offering the security of supply
+                            demanded by this sector.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-                <!-- indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-
-                <!-- wrapper -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="1.png" class="img-rounded">
-                    </div>
-                    <div class="item ">
-                        <img src="2.png" class="img-rounded">
-                    </div>
-                    <div class="item ">
-                        <img src="3.png" class="img-rounded">
-                    </div>
-
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12" id="our_products">
+                <div class="title">
+                    <h1>Our Products</h1>
                 </div>
-                <!-- left and right controls -->
-                <a href="#myCarousel" class="left carousel-control" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a href="#myCarousel" class="right carousel-control" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
+            </div>
+        </div>
 
+        <div class="row ">
+            <div class="col-md-4 col-sm-4 col-xs-8">
+                <div class="card bg-light ">
+                    <img class="card-img-top img-responsive center-block" src="img/SaveX_Product.png" alt="SaveX_Product">
+                    <div class="card-body">
+                        <h4 class="card-title border-bottom pb-3">SaveX Diesel generator fuel saving device</h4>
+                        <p class="card-text">Generator sets are a common sight and likely to remain that way
+                            for some time to come in most parts of the world because of electricity shortages.
+                            Of course, buying a generator set is one thing. Making sure it has a long and
+                            productive life with decent running costs is another. </p>
+                        <a href="#" class="btn btn-sm float-right btn_style_read_me">Read more <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4 col-sm-4 col-xs-8">
+                <div class="card bg-light">
+                    <img class="card-img-top img-responsive center-block" src="img/ps.png" alt="Savex Home ">
+                    <div class="card-body">
+                        <h4 class="card-title border-bottom pb-3">SaveX Diesel generator fuel saving device</h4>
+                        <p class="card-text">Generator sets are a common sight and likely to remain that way
+                            for some time to come in most parts of the world because of electricity shortages.
+                            Of course, buying a generator set is one thing. Making sure it has a long and
+                            productive life with decent running costs is another. </p>
+                        <a href="#" class="btn btn-sm float-right btn_style_read_me">Read more <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 col-sm-4 col-xs-8">
+                <div class="card bg-light">
+                    <img class="card-img-top img-responsive center-block" src="img/tpeps.png" alt="Savex Three Phase Energy Power Saver">
+                    <div class="card-body">
+                        <h4 class="card-title border-bottom pb-3">SaveX Diesel generator fuel saving device</h4>
+                        <p class="card-text">Generator sets are a common sight and likely to remain that way
+                            for some time to come in most parts of the world because of electricity shortages.
+                            Of course, buying a generator set is one thing. Making sure it has a long and
+                            productive life with decent running costs is another. </p>
+                        <a href="#" class="btn btn-sm float-right btn_style_read_me">Read more <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="mission_statment col-md-12" id="mission_statment">
+                <div class="mission_statment_div">
+                    <div class="content ">
+                        <h1>Mission Statment</h1>
+                        <p>
+                            We aim for the future by thinking long-term, consistently seeking harmony between
+                            our business goals and sustainable outcomes for humanity. Save-X constantly figures out
+                            innovative ways to save energy and the environment. We aim to be a notable contributor in
+                            renewable energy technologies, energy efficiency, and conservation.
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="vision_statment col-md-12" id="vision_statment">
+                <div class="vision_statment_div">
+                    <div class="content ">
+                        <h1>Vision Statment</h1>
+                        <p>
+                            Our Vision is to develop a world-class business environment for our staff, customers, and
+                            associates. By embracing our core values, we will deliver world-class products and services
+                            and continuously improve our environmental performance.
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="quality_statment " id="quality_statment">
+                <div class="quality_statment_div col-md-12 col-sm-12 col-xs-12 ">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6 ">
+                        <div class="card bg-light">
+                            <img class="card-img-top img-responsive center-block" src="img/qa.png" alt="quality statment ">
+                            <div class="card-body">
+                                <h4 class="card-title border-bottom pb-3">Quality Statment</h4>
+                                <p class="card-text">Savex is committed to being a responsible world citizen,
+                                    dedicated
+                                    to providing quality products and services that will satisfy the needs and
+                                    expectations of our customers. This is deeply rooted in our history and culture
+                                    and
+                                    is reflected in the way we carry out our daily business We are committed to the
+                                    continual improvement of our products and processes to achieve our quality
+                                    objectives, maximize value to our customers and realize a reasonable profit
+                                    that
+                                    will provide a stable future for our employees.
+                                    Save-X Products will continue to build on our experience of providing quality
+                                    products to the Industry. <br><br> Savex regards quality in a wider perspective
+                                    and
+                                    we are convinced that high quality, in everything we do, is paramount.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 ">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <p class="card-text">Save-X considers quality to be consistent conformance to customer
+                                    requirements, and will work smart in order to:
+                                    <!-- <ul class="list-unstyled">
+
+                                        <li>To meet or exceed our customers’ requirements for the quality of the
+                                            products and services we provide.</li>
+                                        <li>To improve our processes and advance our use of technology continuously
+                                            so
+                                            as to enable our customers to become more efficient and profitable.</li>
+                                        <li>To provide our employees with all necessary information, training,
+                                            tools
+                                            and support so that they can achieve our quality objectives.</li>
+                                        <li>To treat all customers, employees, suppliers and our community with
+                                            honesty
+                                            and integrity.</li>
+                                        <li>To give back to environment through our commitment to the social
+                                            responsibility programs to enhance and advocate better future to all
+                                            generations </li>
+
+                                    </ul> -->
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <section class="col-md-8">
-            <h1>test</h1>
-            <p>
-                Where can I get some?
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injected humour, or randomised words which don't look even slightly
-                believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
-                predefined chunks as necessary, making this the first true generator on the Internet. It uses a
-                dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate
-                Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
-                injected humour, or non-characteristic words etc.
-            </p>
-            <p>
-                Where can I get some?
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injected humour, or randomised words which don't look even slightly
-                believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
-                predefined chunks as necessary, making this the first true generator on the Internet. It uses a
-                dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate
-                Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
-                injected humour, or non-characteristic words etc.
-            </p>
-            <p>
-                Where can I get some?
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injected humour, or randomised words which don't look even slightly
-                believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
-                predefined chunks as necessary, making this the first true generator on the Internet. It uses a
-                dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate
-                Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
-                injected humour, or non-characteristic words etc.
-            </p>
-            <p>
-                Where can I get some?
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injected humour, or randomised words which don't look even slightly
-                believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
-                predefined chunks as necessary, making this the first true generator on the Internet. It uses a
-                dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate
-                Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
-                injected humour, or non-characteristic words etc.
-            </p>
-        </section>
+    </div>
 
-        <aside class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">Panel heading</div>
-                <div class="panel-body">
-                    <img src="1.png" class="img-responsive">
-                </div>
-            </div>
-            <div class="panel panel-default">
-
-                <div class="panel-heading">Panel heading</div>
-                <div class="panel-body">
-                    <img src="2.png" class="img-responsive">
-                </div>
-            </div>
-            <div class="panel panel-default">
-
-                <div class="panel-heading">Panel heading</div>
-                <div class="panel-body">
-                    <img src="3.png" class="img-responsive">
-                </div>
-            </div>
-
-
-
-    </aside>
-
-
-
-
-</div>
-
-</div>
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/js.js"></script>
 </body>
+
 </html>
