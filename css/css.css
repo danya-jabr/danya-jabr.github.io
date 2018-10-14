@@ -296,6 +296,7 @@ a img {
     right: 100%;
   }
 } */
+/* Rectangle-path: */
 
 .about {
   position: relative;
@@ -406,11 +407,7 @@ a img {
 .quality_statment {
 }
 .quality_statment_div {
-}
-
-.margin {
-  margin-left: 1px;
-  margin-right: 1px;
+  height: 100vh;
 }
 
 .btn_style_read_me:hover {
@@ -426,10 +423,11 @@ a img {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   padding: 10%;
   margin: 7%;
+  height: 600px;
 }
 
 .card:hover {
@@ -443,6 +441,21 @@ a img {
 }
 .card-title {
   text-align: center;
+}
+.card-text span {
+  color: var(--color-primery);
+}
+#start {
+  text-align: left;
+}
+.card-text li {
+  font-size: 1.125rem;
+  line-height: 1.2;
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-align: left;
 }
 
 /* @media screen and (max-width: 600px) {
